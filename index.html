@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>App Comida</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<div class="app">
+
+<header>
+<h1>🍔 App Comida</h1>
+<p>Alumno: Tu Nombre</p>
+</header>
+
+<nav>
+<button onclick="mostrarSeccion('inicio')">🏠 Inicio</button>
+<button onclick="mostrarSeccion('menu')">🍔 Menú</button>
+</nav>
+
+<!-- INICIO -->
+<section id="inicio" class="seccion">
+<h2>Bienvenido</h2>
+<p>Explora nuestro menú y disfruta comida deliciosa</p>
+
+<img src="img/comida.png" class="img-main">
+</section>
+
+<!-- MENU -->
+<section id="menu" class="seccion">
+<h2>Menú</h2>
+
+<div class="card">
+<img src="img/tacos.png">
+<h3>🌮 Tacos</h3>
+<p>$25</p>
+<button onclick="comprar('Tacos',25)">Comprar</button>
+</div>
+
+<div class="card">
+<img src="img/hamburguesa.png">
+<h3>🍔 Hamburguesa</h3>
+<p>$40</p>
+<button onclick="comprar('Hamburguesa',40)">Comprar</button>
+</div>
+
+</section>
+
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
